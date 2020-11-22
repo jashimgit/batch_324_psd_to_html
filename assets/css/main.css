@@ -24,6 +24,10 @@ p {
 	color: #fff;
 }
 
+a {
+	text-decoration: none;
+}
+
 /*=========================
 	Header section 
 ==========================*/
@@ -32,15 +36,19 @@ p {
 	height: 50px;
 	/*width: 100%;*/
 }
-.top-menu {
-	
+
+.top-left,
+.top-right {
+	margin-top: 15px;
+	margin-bottom: 15px;
 }
- 
- .top-left,
- .top-right {
- 	margin-top: 15px;
- 	margin-bottom: 15px;
- }
+
+.top-left ul {
+	padding-left: 0;
+}
+.top-right ul {
+	padding-right: 0;
+}
 .top-left ul li {
 	list-style: none;
 	display: inline;
@@ -51,6 +59,7 @@ p {
 	border-radius: 50%;
 }
 
+
 .top-left ul li a {
 	text-decoration: none;
 
@@ -59,4 +68,29 @@ p {
 .top-right ul li {
 	list-style: none;
 	display: inline;
+	border-right: 1px solid #999;
+	padding: 0px 9px;
+}
+
+.top-right ul li a {
+	color: #999999;
+}
+
+.top-right ul li:last-child {
+	border-right: none;
+}
+
+/*  header section  */
+
+.header {
+	background: #4c555e;
+}
+
+.header-right h2 {
+	color: #fff;
+}
+
+.header-right p {
+	color: #999;
+	font-size: 12px;
 }
